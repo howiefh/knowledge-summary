@@ -8,7 +8,6 @@ repoBranch="gh-pages"
 if [ ! -d $deployDir ]; then
     mkdir $deployDir
     cd $deployDir
-    echo "deploy.sh" >> .gitignore
     git init
     git checkout -b $repoBranch
     git add -A
