@@ -57,6 +57,18 @@ gitbook serve
 gitbook build
 ```
 
+## 发布
+
+自己写了个脚本[deploy.sh](https://github.com/howiefh/knowledge-summary/blob/master/deploy.sh)，简单将仓库地址配置一下就可以使用
+
+```
+repoUrl="https://github.com/howiefh/knowledge-summary.git"
+```
+
+通过`gitbook serve`预览后没什么问题，就可以执行`./.deploy.sh`将其发布到GitHub的gh-pages分支。
+
+新建个GitBook仓库，选择从GitHub导入之前的仓库即可，以后只需要往GitHub提交就可以了。
+
 ## 版权
 
 本书采用“[保持署名—非商用](http://creativecommons.org/licenses/by-nc/4.0/)”创意共享4.0许可证。
